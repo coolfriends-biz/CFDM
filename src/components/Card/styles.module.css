@@ -1,0 +1,11 @@
+.card {
+  background: var(--cf-bg-raised);
+  border-radius: var(--cf-radius-lg);
+  transition: box-shadow var(--cf-duration-base) var(--cf-ease-default);
+}
+
+.border { border: 1px solid var(--cf-border-default); }
+
+.pad-sm { padding: var(--cf-space-3); }
+.pad-md { padding: var(--cf-space-5); }
+.pad-lg { padding: var(--cf-space-8); }

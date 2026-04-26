@@ -1,0 +1,63 @@
+{
+  "name": "@coolfriends/cfdm",
+  "version": "0.1.0",
+  "description": "CFDM — CoolFriends Design Method. 시원한친구들의 디자인 토큰 & React 컴포넌트 라이브러리.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/coolfriends-biz/CFDM",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coolfriends-biz/CFDM.git"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./tokens.css": "./src/tokens/tokens.css"
+  },
+  "files": [
+    "dist",
+    "src/tokens/tokens.css"
+  ],
+  "sideEffects": [
+    "src/tokens/tokens.css",
+    "**/*.css"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build:demo": "vite build",
+    "build:lib": "vite build --config vite.lib.config.ts",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.12.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^10.2.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.5.0",
+    "prettier": "^3.8.3",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.58.2",
+    "vite": "^8.0.10",
+    "vite-plugin-dts": "^4.5.4",
+    "vite-plugin-lib-inject-css": "^2.2.2"
+  }
+}

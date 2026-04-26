@@ -1,0 +1,100 @@
+/* CFDM Design Tokens — CSS Custom Properties */
+/* 이 파일을 루트에 import 하거나, 컴포넌트 루트에서 :root에 적용하세요 */
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+
+:root {
+  /* ── Typography ─────────────────────────────── */
+  --cf-font-family: 'Pretendard Variable', Pretendard, 'Apple SD Gothic Neo',
+    'Malgun Gothic', system-ui, sans-serif;
+
+  --cf-type-t1: 2.5rem;   /* 40px */
+  --cf-type-t2: 2rem;     /* 32px */
+  --cf-type-t3: 1.625rem; /* 26px */
+  --cf-type-t4: 1.375rem; /* 22px */
+  --cf-type-t5: 1.125rem; /* 18px */
+  --cf-type-t6: 1rem;     /* 16px */
+  --cf-type-t7: 0.875rem; /* 14px */
+  --cf-type-t8: 0.8125rem;/* 13px */
+  --cf-type-t9: 0.75rem;  /* 12px */
+
+  /* ── Spacing (8pt grid) ─────────────────────── */
+  --cf-space-0:  0;
+  --cf-space-1:  0.25rem;  /* 4px */
+  --cf-space-2:  0.5rem;   /* 8px */
+  --cf-space-3:  0.75rem;  /* 12px */
+  --cf-space-4:  1rem;     /* 16px */
+  --cf-space-5:  1.25rem;  /* 20px */
+  --cf-space-6:  1.5rem;   /* 24px */
+  --cf-space-8:  2rem;     /* 32px */
+  --cf-space-10: 2.5rem;   /* 40px */
+  --cf-space-12: 3rem;     /* 48px */
+  --cf-space-16: 4rem;     /* 64px */
+
+  /* ── Border Radius ──────────────────────────── */
+  --cf-radius-sm:   0.25rem;  /* 4px */
+  --cf-radius-md:   0.5rem;   /* 8px */
+  --cf-radius-lg:   0.75rem;  /* 12px */
+  --cf-radius-xl:   1rem;     /* 16px */
+  --cf-radius-full: 9999px;
+
+  /* ── Motion ─────────────────────────────────── */
+  --cf-duration-fast:   160ms;
+  --cf-duration-base:   220ms;
+  --cf-duration-slow:   320ms;
+  --cf-ease-default:    cubic-bezier(.2, .8, .2, 1);
+  --cf-ease-in:         cubic-bezier(.4,  0,  1, 1);
+  --cf-ease-out:        cubic-bezier(0,   0, .2, 1);
+
+  /* ── Colors (Light) ─────────────────────────── */
+  --cf-bg-base:    #ffffff;
+  --cf-bg-raised:  #f8fafc;
+  --cf-bg-sunken:  #f1f5f9;
+
+  --cf-fg-primary:   #0f172a;
+  --cf-fg-secondary: #334155;
+  --cf-fg-muted:     #64748b;
+  --cf-fg-on-accent: #ffffff;
+
+  --cf-accent-50:  #f0fdfa;
+  --cf-accent-100: #ccfbf1;
+  --cf-accent-200: #99f6e4;
+  --cf-accent-400: #2dd4bf;
+  --cf-accent-500: #14b8a6;
+  --cf-accent-600: #0d9488;
+
+  --cf-state-success: #16a34a;
+  --cf-state-warn:    #d97706;
+  --cf-state-danger:  #dc2626;
+
+  --cf-border-default: #e2e8f0;
+  --cf-border-strong:  #cbd5e1;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cf-bg-base:    #0f172a;
+    --cf-bg-raised:  #1e293b;
+    --cf-bg-sunken:  #0a1120;
+
+    --cf-fg-primary:   #f8fafc;
+    --cf-fg-secondary: #cbd5e1;
+    --cf-fg-muted:     #94a3b8;
+    --cf-fg-on-accent: #ffffff;
+
+    --cf-accent-50:  #042f2e;
+    --cf-accent-100: #134e4a;
+    --cf-accent-200: #115e59;
+    --cf-accent-400: #2dd4bf;
+    --cf-accent-500: #14b8a6;
+    --cf-accent-600: #0d9488;
+
+    --cf-state-success: #4ade80;
+    --cf-state-warn:    #fbbf24;
+    --cf-state-danger:  #f87171;
+
+    --cf-border-default: #1e293b;
+    --cf-border-strong:  #334155;
+  }
+}
