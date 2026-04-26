@@ -29,7 +29,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build:demo": "vite build",
+    "build:demo": "vite build --base=/CFDM/",
     "build:lib": "vite build --config vite.lib.config.ts",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",

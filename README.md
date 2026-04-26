@@ -20,6 +20,8 @@
 CFDM은 **차분하고, 직관적이며, 한국어를 먼저 생각하는** 디자인 방법론이에요.  
 색·간격·타이포그래피·모션을 CSS 토큰 단위로 관리하고, React 컴포넌트로 바로 쓸 수 있어요.
 
+데모 웹사이트: **https://coolfriends-biz.github.io/CFDM/**
+
 | 원칙 | 한 줄 요약 |
 |---|---|
 | **Calm**    | 민트 액센트 하나. 네온·그라데이션은 없어요. |
@@ -109,6 +111,7 @@ npm install
 
 npm run dev          # 쇼케이스 페이지 (localhost:5173)
 npm run build:lib    # 라이브러리 빌드 → dist/
+npm run build:demo   # 데모 정적 빌드 → dist/
 npm run typecheck    # 타입 검사
 npm run lint         # 린트
 ```
