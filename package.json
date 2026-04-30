@@ -28,6 +28,7 @@
     "**/*.css"
   ],
   "scripts": {
+    "build": "vite build --config vite.lib.config.ts",
     "dev": "vite",
     "build:demo": "vite build --base=/CFDM/",
     "build:lib": "vite build --config vite.lib.config.ts",
