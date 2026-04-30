@@ -9,17 +9,19 @@ export interface StackProps extends HTMLAttributes<HTMLDivElement> {
   wrap?: boolean;
 }
 
-export function Stack({
-  direction = 'column',
-  gap = 4,
-  align,
-  justify,
-  wrap = false,
-  className = '',
-  style,
-  children,
-  ...rest
-}: StackProps) {
+/** Props-only signature keeps emitted `.d.ts` from marking destructured fields as required JSX props. */
+export function Stack(props: StackProps) {
+  const {
+    direction = 'column',
+    gap = 4,
+    align,
+    justify,
+    wrap = false,
+    className = '',
+    style,
+    children,
+    ...rest
+  } = props;
   return (
     <div
       className={[styles.stack, className].filter(Boolean).join(' ')}
