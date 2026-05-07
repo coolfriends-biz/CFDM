@@ -69,6 +69,46 @@
 
   --cf-border-default: #e2e8f0;
   --cf-border-strong:  #cbd5e1;
+
+  /* ── CFDM-Sansy: Display type ───────────────── */
+  --cf-sansy-type-td1: 5.5rem; /* 88px */
+  --cf-sansy-type-td2: 4.25rem; /* 68px */
+  --cf-sansy-type-td3: 3.25rem; /* 52px */
+  --cf-sansy-type-eyebrow: 0.8125rem; /* 13px */
+  --cf-sansy-leading-td1: 0.95;
+  --cf-sansy-leading-td2: 1;
+  --cf-sansy-leading-td3: 1.05;
+  --cf-sansy-tracking-td1: -0.03em;
+  --cf-sansy-tracking-td2: -0.025em;
+  --cf-sansy-tracking-td3: -0.02em;
+  --cf-sansy-tracking-eyebrow: 0.12em;
+
+  /* ── CFDM-Sansy: brand surfaces ─────────────── */
+  --cf-sansy-cosmos-900: #04060d;
+  --cf-sansy-cosmos-700: #0b1226;
+  --cf-sansy-cosmos-glow: #86efac;
+  --cf-sansy-amber-500: #facc15;
+  --cf-sansy-amber-50: #fef9c3;
+  --cf-sansy-violet-700: #6d28d9;
+  --cf-sansy-violet-300: #c4b5fd;
+  --cf-sansy-mono-950: #0a0a0a;
+  --cf-sansy-mono-50: #fafafa;
+
+  /* ── CFDM-Sansy: depth and object canvas ───── */
+  --cf-sansy-elev-1: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --cf-sansy-elev-2: 0 16px 32px rgba(0, 0, 0, 0.14);
+  --cf-sansy-elev-3: 0 32px 64px rgba(0, 0, 0, 0.22);
+  --cf-sansy-tilt-sm: perspective(1200px) rotateX(2deg) rotateY(-3deg);
+  --cf-sansy-tilt-md: perspective(1200px) rotateX(4deg) rotateY(-6deg);
+  --cf-sansy-stack-offset: 24px;
+  --cf-sansy-canvas-aspect: 4 / 3;
+  --cf-sansy-canvas-radius: 28px;
+  --cf-sansy-canvas-pad: 48px;
+  --cf-sansy-particle-size: 2px;
+  --cf-sansy-particle-opacity: 0.6;
+  --cf-sansy-split-ratio: 42% / 58%;
+  --cf-sansy-split-gap: 0px;
+  --cf-sansy-split-radius: 0px;
 }
 
 /* Dark mode */
